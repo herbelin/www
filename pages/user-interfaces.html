@@ -2,32 +2,21 @@
 <#include "incl/header.html">
 
 <div class="framework">
-<div class="frameworklabel">Editor-support packages</div>
+<div class="frameworklabel">Most popular user interfaces</div>
 <div class="frameworkcontent">
 
 <p>
-Coq projects can be developed with a variety of editors thanks to
+Coq projects can be developed with a variety of <strong>editors</strong> thanks to
 great support provided through user-contributed extensions.  Here, we
 list such support extensions that are actively used and maintained:
 
 <ul>
 
 <li>
-<strong>Visual Studio Code</strong> and <strong>VSCodium</strong> users can use either of
-the <a href="https://github.com/coq-community/vscoq">VsCoq
-extension</a>, which is actively maintained by several contributors as part
-of <a href="https://github.com/coq-community/manifesto">coq-community</a>, or
-the new <a href="https://github.com/ejgallego/coq-lsp">coq-lsp extension</a>,
-which is based on an implementation of the <a
-href="https://microsoft.github.io/language-server-protocol">Language
-Server Protocol</a> standard, with custom extensions.
-
-<tt>coq-lsp</tt> provides continous document checking and position-based
-document navigation (an interaction model similar to what is found in e.g.,
-Lean, and which departs from the model found in other Coq user interfaces).
-See <tt>coq-lsp's</tt> <a
-href="https://github.com/ejgallego/coq-lsp/blob/main/etc/FAQ.md">FAQ</a>
-for more information.
+  <strong>Visual Studio Code</strong> and <strong>VSCodium</strong> users can use
+ the <a href="https://github.com/coq-community/vscoq/tree/vscoq1">VsCoq 1
+extension</a>, which is maintained by several contributors as part
+    of <a href="https://github.com/coq-community/manifesto">coq-community</a>.
 </li>
 
 <li>
@@ -36,15 +25,14 @@ mode <a href="https://proofgeneral.github.io/">Proof General</a>, that
 can be extended by the minor Coq
 mode <a href="https://github.com/cpitclaudel/company-coq">Company-Coq</a>.
 Proof General was one of the first user interface for proof
-assistants, and is one of the most used user interface for Coq today.
-Proof General and Company-Coq give access to many productivity
-shortcuts, including auto-completion and documentation.  On the other
-hand, async proof processing is not supported.
+assistants. See e.g.
+<a href="https://proofgeneral.github.io/doc/master/userman/Coq-Proof-General/">here</a>
+for an excerpt of Coq-specific features.
 </li>
 
 <li>
-<strong>Vim/NeoVim</strong> users can use the actively
-maintained <a href="https://github.com/whonore/Coqtail">Coqtail</a>
+<strong>Vim/NeoVim</strong> users can use the
+<a href="https://github.com/whonore/Coqtail">Coqtail</a>
 extension.  This extension is partly based upon a previous, and now
 unmaintained, Vim extension
 called <a href="https://github.com/the-lambda-church/coquille">Coquille</a>.
@@ -55,58 +43,30 @@ called <a href="https://github.com/the-lambda-church/coquille">Coquille</a>.
 </p>
 
 <p>
-An experimental alternative to the editors mentioned above is the
-computational notebook interface provided by Jupyter.
-A <a href="https://github.com/EugeneLoy/coq_jupyter/">Jupyter kernel
-for Coq</a> is available if you want to try this interface, for
-instance for pedagogical or readability purposes.  One of the
-advantages of using a Jupyter notebook is that you can save and
-display a selection of intermediate proof steps, which your reader
-will see without the need to reexecute the document.
-</p>
-
-</div>
-
-<div class="frameworklinks">
-<ul>
-<li><a class="extlink" href="https://github.com/coq-community/vscoq">VsCoq (VS Code)</a></li>
-<li><a class="extlink" href="https://github.com/ejgallego/coq-lsp">coq-lsp (VS Code)</a></li>
-<li><a class="extlink" href="https://proofgeneral.github.io/">Proof General (Emacs)</a></li>
-<li><a class="extlink" href="https://github.com/whonore/Coqtail">Coqtail (Vim)</a></li>
-</ul>
-</div>
-</div>
-
-<div class="framework">
-<div class="frameworklabel">Standalone interfaces</div>
-<div class="frameworkcontent">
-
-<p>
-Alternatively, you can
-use <a href="https://coq.inria.fr/refman/practical-tools/coqide.html">CoqIDE</a>,
-which is developed and distributed alongside Coq. CoqIDE relies
-on <a href="https://github.com/coq/coq/blob/master/dev/doc/xml-protocol.md">Coq's
-XML protocol for IDEs</a> and implements all of the features provided
-by this protocol, meaning in particular asynchronous evaluation.
-CoqIDE comes with standard basic Emacs-like bindings
-and with some specific Coq-related bindings but, as an editor, it is
+Otherwise, <a href="https://coq.inria.fr/refman/practical-tools/coqide.html">CoqIDE</a> is
+a <strong>stand-alone</strong> interface
+developed and distributed alongside Coq.
+CoqIDE comes with standard basic Emacs-like edition bindings
+and with some specific Coq-related features (e.g. for searching, printing, debugging) but, as an editor, it is
 not as complete as a general-purpose editor could be (for instance it
 does not have automatic indentation).
 </p>
 
 <p>
-As a way to try Coq without installing anything, you can
-use <a href="https://jscoq.github.io/">JsCoq</a>.  JsCoq loads Coq
-entirely in your browser.  However, it is too limited to conduct
-actual projects: it lacks access to the VM and native computing
-machineries of Coq, and may hit out-of-memory and stack-overflow
-failures quicker than native versions of Coq.
+As a way to try Coq without installing anything, you can also
+use <a href="https://jscoq.github.io/">JsCoq</a> which loads Coq
+entirely in <strong>your browser</strong>.  However, it is limited to conduct
+actual projects: e.g., it lacks access to the VM and native computing
+machineries of Coq, and running in the browser is slower.
 </p>
 
 </div>
 
 <div class="frameworklinks">
 <ul>
+<li><a class="extlink" href="https://github.com/coq-community/vscoq/tree/vscoq1">VsCoq 1 (VS Code)</a></li>
+<li><a class="extlink" href="https://proofgeneral.github.io/">Proof General (Emacs)</a></li>
+<li><a class="extlink" href="https://github.com/whonore/Coqtail">Coqtail (Vim)</a></li>
 <li><a href="refman/practical-tools/coqide.html">CoqIDE</a></li>
 <li><a class="extlink" href="https://jscoq.github.io/">JsCoq</a></li>
 </ul>
@@ -114,23 +74,67 @@ failures quicker than native versions of Coq.
 </div>
 
 <div class="framework">
-<div class="frameworklabel">Experimental / discontinued interfaces</div>
+<div class="frameworklabel">Towards a modular design of Coq user interfaces based on the LSP protocol</div>
+<div class="frameworkcontent">
+  The <a href="https://microsoft.github.io/language-server-protocol">Language
+        Server Protocol</a> (LSP) is a common protocol for user
+        interfaces. Two interfaces, each composed of a VS Code
+        client and of a Coq server communicating over a proof-assistant-specific
+        extension of LSP are at an experimental stage of development:
+  <ul>
+    <li><a href="https://github.com/coq-community/vscoq">VsCoq 2</a></li>
+    <li><a href="https://github.com/ejgallego/coq-lsp">coq-lsp</a></li>
+  </ul>
+  <p>
+  Both provides the ability of continuous and asynchronous document
+  checking as well as position-based document navigation (an
+  interaction model introduced in Wenzel's Isabelle/JEdit which
+  departs from the model of splitting the buffer into a validated zone
+  and an unvalidated zone, as found in other Coq user interfaces; see
+  e.g. this <a href="https://github.com/ejgallego/coq-lsp/blob/main/etc/FAQ.md">FAQ</a>
+  for more information, where in the text, "coq-lsp" should be read as
+  "coq-lsp or VsCoq 2" and "VsCoq" should be read as "VsCoq 1").
+  </p>
+  <p>
+  The features provided by the two servers are available to any
+  editor implementing the protocol, e.g. Emacs, Vim, jsCoq, or even another
+  VS Code client. In turn, any new feature eventually added to the
+  servers becomes available for integration by their clients.
+  </p>
+</div>
+
+<div class="frameworklinks">
+<ul>
+<li><a class="extlink" href="https://github.com/coq-community/vscoq/tree/vscoq1">VsCoq 2</a></li>
+<li><a class="extlink" href="https://github.com/coq-community/vscoq/tree/vscoq1">coq-lsp</a></li>
+</ul>
+</div>
+</div>
+
+<div class="framework">
+<div class="frameworklabel">A selected list of experimental or historical interfaces</div>
 <div class="frameworkcontent">
 
 <p>
-There have been many experiments over the years.  Here are some
+Here are some
 additional user interfaces that have stayed at the experimental level
-or whose maintenance has been discontinued and or is currently
+or whose maintenance has either been discontinued or is currently
 uncertain:
 <ul>
+<li> A <a href="https://github.com/EugeneLoy/coq_jupyter/">Jupyter kernel
+for Coq</a> is available if you want to try this interface, for
+instance for pedagogical or readability purposes.  One of the
+advantages of using a Jupyter notebook is that you can save and
+display a selection of intermediate proof steps, which your reader
+will see without the need to reexecute the document.
+</li>
 <li>
 The <a href="http://coqoon.github.io/">Coqoon</a> Eclipse plugin was
 initially based upon
-the <a href="https://bitbucket.org/coqpide/pidetop/src/PIDEtop/">PIDEtop
-Coq plugin</a> (following Wenzel's asynchronous PIDE framework).
-Support for more recent versions of Coq (8.7 and 8.8) relies
-on <a href="https://github.com/coq/coq/blob/master/dev/doc/xml-protocol.md">Coq's
-XML protocol for IDEs</a>.
+the discontinued <a href="https://bitbucket.org/coqpide/pidetop/src/PIDEtop/">PIDEtop
+Coq plugin</a> (following Wenzel's asynchronous PIDE framework and using the
+<a href="https://github.com/coq/coq/blob/master/dev/doc/xml-protocol.md">Coq's
+XML protocol for IDEs</a>).
 </li>
 <li>
 The <a href="https://github.com/Ptival/PeaCoq">PeaCoq</a> online web
@@ -149,8 +153,16 @@ experimental Eclipse plugin with support for Coq (in 2005-2006).
 <li>
 <a href="https://www-sop.inria.fr/lemme/pcoq/">Pcoq</a> (discontinued
 in 2003) was a first experiment at <a href="https://www-sop.inria.fr/croap/ctcoq/help/pbp.html">proof-by-pointing</a>.
+</li>
+<li> ...</li>
 </ul>
 </p>
+<p>
+  Know more on the <a href="https://github.com/coq/coq/wiki/Basic-architecture-of-Coq-User-Interfaces">design of Coq user interfaces</a>, or contribute to <a href="https://github.com/coq/coq/wiki/GUIWishes">Coq UI wishes</a>.
+</p>
+
+</div>
+</div>
 
 </div>
 </div>
